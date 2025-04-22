@@ -13,4 +13,22 @@ class App {
 fun main() {
     println("Hello Kotlin")
     println("Hola soy Santino y hoy es Martes 22 de Abril")
+    tiposdeDatos()
 }
+fun tiposdeDatos(){
+    val nombre: String = "Santino"
+    val edad: Int = 17
+    val altura: Double = 1.74
+    val soyAlumno: Boolean = true
+
+    println("Nombre: $nombre")
+    println("Edad: $edad")
+    println("Altura: $altura")
+    println("Es alumno: $soyAlumno")
+
+    val base: Double = 5.0
+    val alturaRectangulo: Double = 3.0
+    val area: Double = base * alturaRectangulo
+    println("El área del rectángulo es: $area")
+}
+
