@@ -11,5 +11,6 @@ class App {
 }
 
 fun main() {
-    println(App().greeting)
+    println("Hello Kotlin")
+    println("Hola soy Santino y hoy es Martes 22 de Abril")
 }
