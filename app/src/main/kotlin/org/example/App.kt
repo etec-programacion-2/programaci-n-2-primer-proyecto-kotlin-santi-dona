@@ -40,6 +40,53 @@ fun determinarTipoDeNumero(numero: Int): String {
         else -> "El número es cero"
     }
 }
+fun mostrarNumerosConLoops() {
+    // Usando for
+    println("Usando for:")
+    for (i in 1..10) {
+        println(i)
+    }
+    
+    // Usando while
+    println("\nUsando while:")
+    var j = 1
+    while (j <= 10) {
+        println(j)
+        j++
+    }
+    
+    // Usando do-while
+    println("\nUsando do-while:")
+    var k = 1
+    do {
+        println(k)
+        k++
+    } while (k <= 10)
+}
+
+fun mostrarNumerosParesConLoops() {
+    // Usando for
+    println("Usando for:")
+    for (i in 2..20 step 2) {
+        println(i)
+    }
+    
+    // Usando while
+    println("\nUsando while:")
+    var j = 2
+    while (j <= 20) {
+        println(j)
+        j += 2
+    }
+    
+    // Usando do-while
+    println("\nUsando do-while:")
+    var k = 2
+    do {
+        println(k)
+        k += 2
+    } while (k <= 20)
+}
 fun main() {
     println("Hello Kotlin")
     println("Hola soy Santino y hoy es Martes 22 de Abril")
@@ -52,4 +99,6 @@ fun main() {
     println("${determinarTipoDeNumero(5)}")  
     println(determinarTipoDeNumero(-3))  
     println(determinarTipoDeNumero(0))   
+    mostrarNumerosConLoops()
+    mostrarNumerosParesConLoops()
 }
