@@ -10,11 +10,6 @@ class App {
         }
 }
 
-fun main() {
-    println("Hello Kotlin")
-    println("Hola soy Santino y hoy es Martes 22 de Abril")
-    tiposdeDatos()
-}
 fun tiposdeDatos(){
     val nombre: String = "Santino"
     val edad: Int = 17
@@ -31,4 +26,30 @@ fun tiposdeDatos(){
     val area: Double = base * alturaRectangulo
     println("El área del rectángulo es: $area")
 }
+fun esParOImpar(numero: Int) {
+    when (numero % 2) {
+        0 -> println("El número $numero es par")
+        else -> println("El número $numero es impar")
+    }
+}
 
+fun determinarTipoDeNumero(numero: Int): String {
+    return when {
+        numero > 0 -> "El número es positivo"
+        numero < 0 -> "El número es negativo"
+        else -> "El número es cero"
+    }
+}
+fun main() {
+    println("Hello Kotlin")
+    println("Hola soy Santino y hoy es Martes 22 de Abril")
+    tiposdeDatos()
+    esParOImpar(7)
+    esParOImpar(12)
+    esParOImpar(50)
+    esParOImpar(-3)
+    esParOImpar(0)
+    println("${determinarTipoDeNumero(5)}")  
+    println(determinarTipoDeNumero(-3))  
+    println(determinarTipoDeNumero(0))   
+}
